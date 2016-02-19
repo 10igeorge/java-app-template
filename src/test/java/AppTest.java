@@ -8,8 +8,10 @@ import static org.fluentlenium.core.filter.FilterConstructor.*;
 
 public class AppTest extends FluentTest {
   public WebDriver webDriver = new HtmlUnitDriver();
+
+  @Override
   public WebDriver getDefaultDriver() {
-      return webDriver;
+    return webDriver;
   }
 
   @ClassRule
